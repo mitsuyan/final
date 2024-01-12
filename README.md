@@ -3,4 +3,4 @@
 # クラス　　　:SD2G
 # 氏名　　　　:中野　光寿
 # システム名  :料理一覧システム
-# URL        :https://github.com/mitsuyan/final
+# URL        :https://aso2201373.angry.jp/final/src/cookList.php
