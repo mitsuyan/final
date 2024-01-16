@@ -1,0 +1,146 @@
+h1 {
+    position: relative;
+    padding: 0.5em;
+    background: #a6d3c8;
+    color: white;
+}
+
+h1::before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    border: none;
+    border-bottom: solid 15px transparent;
+    border-right: solid 20px rgb(149, 158, 155);
+}
+
+#searchInput{
+    width: 500px;
+    height: 20px;
+}
+.regiButton{
+    display: inline-block;
+    font-size: 15pt;
+    /* 文字サイズ */
+    text-align: center;
+    /* 文字位置   */
+    cursor: pointer;
+    /* カーソル   */
+    padding: 5px 60px;
+    /* 余白       */
+    background: #c98c31;
+    /* 背景色     */
+    color: #ffffff;
+    /* 文字色     */
+    line-height: 1.5em;
+    /* 1行の高さ  */
+    transition: .3s;
+    /* なめらか変化 */
+    border: 2px solid #e4d4bc;
+    /* 枠の指定 */
+    text-decoration:none;
+}
+.regiButton:hover {
+    box-shadow: none;
+    /* カーソル時の影消去 */
+    color: #e4d4bc;
+    /* 背景色     */
+    background: #ffffff;
+    /* 文字色     */
+}
+table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    width: 100%;
+}
+
+table th,
+table td {
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.row{
+    background-color: #c79852;
+    color: white;
+    border: solid 1px #927141;
+    width: 100px;
+}
+table th {
+    background-color: #c79852;
+    color: white;
+    border: solid 1px #927141;
+}
+
+table td {
+    background-color: #e4d4bc;
+    border: solid 1px #af9d85;
+}
+.deleteButton{
+    background: #c7211e;
+    width: 60px;
+}
+
+.updateButton{
+    background: #02edb2;
+    width: 60px;
+}
+
+.del{
+    width: 150px;
+}
+
+input{
+    width: calc(100% - 40em);
+}
+
+.emphasis_design30 {
+    color: #bde4f7;
+    display: inline-block;
+    text-shadow: 1px 1px 0 #333, -1px -1px 0 #333, -1px 1px 0 #333, 1px -1px 0 #333, 0px 1px 0 #333, -1px 0 #333, -1px 0 0 #333, 1px 0 0 #333;
+    font-size: 50px;
+    padding-left: 25%;
+}
+
+.emphasis_design30::before {
+    content: attr(data-text);
+    position: absolute;
+    z-index: -1;
+    text-shadow: 4px 4px #333;
+    -webkit-text-stroke: 4px #333;
+}
+
+.sortButton {
+    display: inline-block;
+    font-size: 15pt;
+    /* 文字サイズ */
+    text-align: center;
+    /* 文字位置   */
+    cursor: pointer;
+    /* カーソル   */
+    padding: 5px 60px;
+    /* 余白       */
+    background: #c98c31;
+    /* 背景色     */
+    color: #ffffff;
+    /* 文字色     */
+    line-height: 1.5em;
+    /* 1行の高さ  */
+    transition: .3s;
+    /* なめらか変化 */
+    border: 2px solid #e4d4bc;
+    /* 枠の指定 */
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.sortButton:hover {
+    box-shadow: none;
+    /* カーソル時の影消去 */
+    color: #e4d4bc;
+    /* 背景色     */
+    background: #ffffff;
+    /* 文字色     */
+}

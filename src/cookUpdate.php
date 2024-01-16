@@ -21,13 +21,21 @@ if (isset($_GET['id'])) {
             <h1>料理更新</h1>
             <form action="updateProcess.php" method="post">
                 <input type="hidden" name="cook_id" value="<?= $cook['cook_id'] ?>">
-                <label for="cook_name">料理名:</label>
-                <input type="text" id="cook_name" name="cook_name" value="<?= $cook['cook_name'] ?>" required>
-                <label for="cook_price">調理費用:</label>
-                <input type="text" id="cook_price" name="cook_price" value="<?= $cook['cook_price'] ?>" required>
-                <label for="cook_time">調理時間:</label>
-                <input type="text" id="cook_time" name="cook_time" value="<?= $cook['cook_time'] ?>" required>
-                <button type="submit">更新</button>
+                <table>
+                    <tr>
+                        <th><label for="cook_name">料理名:</label></th>
+                        <td><input type="text" id="cook_name" name="cook_name" value="<?= $cook['cook_name'] ?>" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="cook_price">調理費用:</label></th>
+                        <td><input type="text" id="cook_price" name="cook_price" value="<?= $cook['cook_price'] ?>" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="cook_time">調理時間:</label></th>
+                        <td><input type="text" id="cook_time" name="cook_time" value="<?= $cook['cook_time'] ?>" required></td>
+                    </tr>
+                </table>
+                <button type="submit" class='regiButton'>更新</button>
             </form>
         </body>
         </html>
